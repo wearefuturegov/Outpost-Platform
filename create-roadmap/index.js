@@ -339,6 +339,7 @@ const outputRoadmap = (data) => {
 
 async function updateReadMe(generatedData) {
   try {
+    console.log("Getting current ROADMAP.md");
     const res = await request(
       `GET /repos/wearefuturegov/Outpost-Platform/contents/create-roadmap/ROADMAP.md`,
       {
@@ -357,6 +358,7 @@ async function updateReadMe(generatedData) {
 
 async function commitNewReadme(path, sha, encoding, updatedContent) {
   try {
+    console.log("Updating current ROADMAP.md with new version");
     const updatedRoadmap = await request(
       `PUT /repos/wearefuturegov/Outpost-Platform/contents/{path}`,
       {
