@@ -349,7 +349,6 @@ async function updateReadMe(generatedData) {
       }
     );
     const { path, sha, content, encoding } = res.data;
-    console.log(path, sha, encoding);
     commitNewReadme(path, sha, encoding, generatedData);
   } catch (error) {
     console.log(error);
@@ -360,11 +359,11 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
   try {
     console.log("Updating current ROADMAP.md with new version");
     const updatedRoadmap = await request(
-      `PUT /repos/wearefuturegov/Outpost-Platform/contents/{path}`,
+      `PUT /repos/wearefuturegov/Outpost-Platform/contents/create-roadmap/ROADMAP.md`,
       {
         message: "Update ROADMAP",
         content: Buffer.from(updatedContent, "utf-8").toString(encoding),
-        path,
+        path: "create-roadmap/ROADMAP.md",
         sha,
         headers: {
           "X-GitHub-Api-Version": "2022-11-28",
