@@ -90,11 +90,7 @@ const easierToAdoptMermaid = (data) => {
     if (key.substring(0, 3) === "1.4") {
       let mermaidData4 = data[key].map(
         (v, i) =>
-          `     MakeDevelopmentEasierTask${1}(${
-            v.title
-          }):::EasierToAdoptTasks\n     click MakeDevelopmentEasierTask${i} href "${
-            v.html_url
-          }"`
+          `     MakeDevelopmentEasierTask${i}(${v.title}):::EasierToAdoptTasks\n     click MakeDevelopmentEasierTask${i} href "${v.html_url}"`
       );
 
       mermaid += `    subgraph MakeDevelopmentEasierTasks[ ]\n`;
@@ -262,7 +258,7 @@ const ImproveOutpostMermaid = (data) => {
     if (key.substring(0, 3) === "4.4") {
       let mermaidData4 = data[key].map(
         (v, i) =>
-          `     ServiceListingsAccessibleTask${1}("${prepTitle(
+          `     ServiceListingsAccessibleTask${i}("${prepTitle(
             v.title
           )}"):::ImproveOutpostTasks\n     click ServiceListingsAccessibleTask${i} href "${
             v.html_url
@@ -276,7 +272,7 @@ const ImproveOutpostMermaid = (data) => {
     if (key.substring(0, 3) === "4.5") {
       let mermaidData4 = data[key].map(
         (v, i) =>
-          `     QuirksTask${1}("${prepTitle(
+          `     QuirksTask${i}("${prepTitle(
             v.title
           )}"):::ImproveOutpostTasks\n     click QuirksTask${i} href "${
             v.html_url
@@ -332,7 +328,7 @@ const outputRoadmap = (data) => {
     .replace("###IMPROVE_OUTPOST_TASKS###", mermaidFour)
     .replace("###PROBLEMS_TO_SOLVE_TASKS###", mermaidFive);
 
-  fs.writeFileSync("README.md", generatedData);
+  fs.writeFileSync("ROADMAP.md", generatedData);
 
   if (process.env.COMMIT_CHANGE) {
     updateReadMe(generatedData);
@@ -342,7 +338,7 @@ const outputRoadmap = (data) => {
 async function updateReadMe(generatedData) {
   try {
     const res = await request(
-      `GET /repos/wearefuturegov/Outpost-Platform/contents/README.md`
+      `GET /repos/wearefuturegov/Outpost-Platform/contents/ROADMAP.md`
     );
     const { path, sha, content, encoding } = res.data;
     commitNewReadme(path, sha, encoding, generatedData);
@@ -356,7 +352,7 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
     await request(
       `PUT /repos/wearefuturegov/Outpost-Platform/contents/{path}`,
       {
-        message: "Update README",
+        message: "Update ROADMAP",
         content: Buffer.from(updatedContent, "utf-8").toString(encoding),
         path,
         sha,
