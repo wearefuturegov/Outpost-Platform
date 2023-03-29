@@ -10,7 +10,7 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "console": "integratedTerminal",
-      "program": "${workspaceFolder}/create-roadmap/index.js",
+      "program": "${workspaceFolder}/functions/create-roadmap/index.js",
       "envFile": "${workspaceFolder}/.env"
     }
   ]
