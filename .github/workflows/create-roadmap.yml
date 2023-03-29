@@ -16,6 +16,9 @@ jobs:
         run: npm ci
 
       - name: Create chart post
+        permissions:
+          contents: write
+          issues: read
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMIT_CHANGE: TRUE
