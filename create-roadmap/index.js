@@ -355,7 +355,7 @@ async function updateReadMe(generatedData) {
 
 async function commitNewReadme(path, sha, encoding, updatedContent) {
   try {
-    await request(
+    const updatedRoadmap = await request(
       `PUT /repos/wearefuturegov/Outpost-Platform/contents/{path}`,
       {
         message: "Update ROADMAP",
@@ -368,6 +368,8 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         },
       }
     );
+
+    console.log(`Roadmap update committed: ${updatedRoadmap.commit.html_url}`);
   } catch (err) {
     console.log(err);
   }
