@@ -3,7 +3,7 @@ on:
   issues:
     types: [labeled, unlabeled]
 jobs:
-  test:
+  buildRoadmap:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
