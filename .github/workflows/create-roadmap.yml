@@ -18,4 +18,5 @@ jobs:
       - name: Create chart post
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node ./create-roadmap/index.js
+          COMMIT_CHANGE: true
+        run: npm run build-roadmap

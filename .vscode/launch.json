@@ -5,13 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": ["<node_internals>/**"],
       "console": "integratedTerminal",
-      "program": "${workspaceFolder}/functions/create-roadmap/index.js",
-      "envFile": "${workspaceFolder}/.env"
+      "internalConsoleOptions": "neverOpen",
+      "name": "nodemon",
+      "program": "${workspaceFolder}/create-roadmap/index.js",
+      "request": "launch",
+      "restart": true,
+      "runtimeExecutable": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
+      "envFile": "${workspaceFolder}/.env",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
     }
   ]
 }

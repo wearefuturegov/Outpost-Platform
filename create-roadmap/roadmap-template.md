@@ -30,9 +30,9 @@ flowchart
     %% Top level
 
     %% 1 Easier to adopt
-    EasierToAdopt([Make the Outpost platform easier to adopt for other local authorities]):::EasierToAdopt
+    EasierToAdopt([Make the Outpost platform<br />easier to adopt for other<br />local authorities]):::EasierToAdopt
     %% 1.x Easier to adopt - second level
-    RemoveRelianceOnTools([Remove reliance on specific tools that other local authorities might not have]):::EasierToAdoptLv2
+    RemoveRelianceOnTools([Remove reliance on specific<br />tools that other local<br />authorities might not have]):::EasierToAdoptLv2
     MakeSetupEasier([Make setup easier]):::EasierToAdoptLv2
     MakeCustomisationEasier([Make customisation easier]):::EasierToAdoptLv2
     MakeDevelopmentEasier([Make development easier]):::EasierToAdoptLv2
@@ -79,7 +79,7 @@ flowchart
 
 
     %% 2 Improve data quality
-    ImproveDataQuality([Improve data quality and ease of sharing]):::ImproveDataQuality
+    ImproveDataQuality([Improve data quality and ease<br />of sharing]):::ImproveDataQuality
 
     ###IMPROVE_DATA_TASKS###
 
@@ -172,13 +172,13 @@ flowchart
 
 
     %% 4 Improve Outpost
-    ImproveOutpost([Make Outpost a better, easier to use product]):::ImproveOutpost
+    ImproveOutpost([Make Outpost a better, easier<br />to use product]):::ImproveOutpost
 
     %% 4.x Improve Outpost - second level
-    OutpostEfficientAndIntuitive([Outpost is more efficient and intuitive to use]):::ImproveOutpostLv2
-    NecessaryInformationInServiceListings([Service listings contain all the necessary information for someone to understand what it is, who it's for, and how it's run]):::ImproveOutpostLv2
+    OutpostEfficientAndIntuitive([Outpost is more efficient and<br />intuitive to use]):::ImproveOutpostLv2
+    NecessaryInformationInServiceListings([Service listings contain all<br />the necessary information for<br />someone to understand what it<br />is, who it's for, and how<br />it's run]):::ImproveOutpostLv2
     OrganisationsMoreDetailed([Organisations contain more detail]):::ImproveOutpostLv2
-    ServiceListingsAccessible([Service listings are more accessible and easy to read]):::ImproveOutpostLv2
+    ServiceListingsAccessible([Service listings are more<br />accessible and easy to read]):::ImproveOutpostLv2
     Quirks([Fixing quirks]):::ImproveOutpostLv2
 
     %% 4.x.x Improve Outpost - third level

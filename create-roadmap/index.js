@@ -37,7 +37,7 @@ const ImproveOutpostEfficient = [
 const ProblemsToSolve = ["5.0_ Problems to solve"];
 
 const prepTitle = (title) => {
-  return title.replace(/['"]/g, "");
+  return title.replace(/['"]/g, "").replace(/(.{1,29})(?:\n|$| )/g, "$1<br />");
 };
 
 const easierToAdoptMermaid = (data) => {
@@ -334,7 +334,9 @@ const outputRoadmap = (data) => {
 
   fs.writeFileSync("README.md", generatedData);
 
-  updateReadMe(generatedData);
+  if (process.env.COMMIT_CHANGE) {
+    updateReadMe(generatedData);
+  }
 };
 
 async function updateReadMe(generatedData) {
