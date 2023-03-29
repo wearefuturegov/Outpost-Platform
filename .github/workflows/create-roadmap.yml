@@ -18,9 +18,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Create chart post
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create roadmap
         env:
           GITHUB_TOKEN: ${{ github.token }}
           COMMIT_CHANGE: TRUE
