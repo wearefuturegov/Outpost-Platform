@@ -372,6 +372,8 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         content: Buffer.from("Test", "utf-8").toString(encoding),
         path: "create-roadmap/ROADMAP.md",
         sha,
+        type: "file",
+        encoding: "base64",
         headers: {
           accept: "application/vnd.github+json",
           "X-GitHub-Api-Version": "2022-11-28",
