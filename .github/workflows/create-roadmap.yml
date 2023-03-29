@@ -19,6 +19,8 @@ jobs:
         run: npm ci
 
       - name: Create chart post
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
           COMMIT_CHANGE: TRUE
