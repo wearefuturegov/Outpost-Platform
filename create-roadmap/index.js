@@ -351,8 +351,7 @@ async function updateReadMe(generatedData) {
     );
     const { path, sha, content, encoding, size, html_url } = res.data;
 
-    console.log(res);
-    console.log("Current version SHA: ${sha}. ${html_url}");
+    console.log(`Current version SHA: ${sha}. ${html_url}`);
     if (sha) {
       commitNewReadme(path, sha, encoding, generatedData);
     }
@@ -370,7 +369,7 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         owner: "wearefuturegov",
         repo: "Outpost-Platform",
         message: "Update ROADMAP",
-        content: Buffer.from(updatedContent, "utf-8").toString(encoding),
+        content: Buffer.from("Test", "utf-8").toString(encoding),
         path: "create-roadmap/ROADMAP.md",
         sha,
         headers: {
