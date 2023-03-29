@@ -4,7 +4,9 @@
   "description": "",
   "main": "create-roadmap.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-roadmap": "node ./create-roadmap/index.js",
+    "build-roadmap:dev": "nodemon ./create-roadmap/index.js"
   },
   "author": "",
   "license": "ISC",

@@ -343,7 +343,6 @@ async function updateReadMe(generatedData) {
       `GET /repos/wearefuturegov/Outpost-Platform/contents/README.md`
     );
     const { path, sha, content, encoding } = res.data;
-    console.log(path, sha, content, encoding);
     commitNewReadme(path, sha, encoding, generatedData);
   } catch (error) {
     console.log(error);
