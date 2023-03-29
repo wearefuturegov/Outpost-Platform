@@ -231,7 +231,7 @@ flowchart
 
 
     classDef ProblemsToSolve fill:#d0d481,stroke:none
-    classDef ProblemsToSolveTasks fill:#fff,stroke:#d0d481,color:#8e7158
+    classDef ProblemsToSolveTaskStyle fill:#fff,stroke:#d0d481,color:#8e7158
 
     %% Top level
 
@@ -243,6 +243,6 @@ flowchart
 
 
     %% Problems to solve
-    ProblemsToSolve  --> ProblemsToSolveTasks:::ProblemsToSolveTasks
+    ProblemsToSolve  --> ProblemsToSolveTasks
 
 ```

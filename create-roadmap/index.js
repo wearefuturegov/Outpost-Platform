@@ -300,7 +300,7 @@ const ProblemsToSolveMermaid = (data) => {
     (v, i) =>
       `     ProblemsToSolveTask${i}("${prepTitle(
         v.title
-      )}"):::ProblemsToSolveTasks\n     click ProblemsToSolveTask${i} href "${
+      )}"):::ProblemsToSolveTaskStyle${i}\n     click ProblemsToSolveTask${i} href "${
         v.html_url
       }"`
   );
