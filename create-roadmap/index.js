@@ -328,12 +328,12 @@ const outputRoadmap = (data) => {
     .replace("###IMPROVE_OUTPOST_TASKS###", mermaidFour)
     .replace("###PROBLEMS_TO_SOLVE_TASKS###", mermaidFive);
 
-  if (process.env.COMMIT_CHANGE === "true") {
-    console.log(`Committing update to ROADMAP.md`);
-    updateReadMe(generatedData);
-  } else {
-    fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
-  }
+  // if (process.env.COMMIT_CHANGE === "true") {
+  console.log(`Committing update to ROADMAP.md`);
+  updateReadMe(generatedData);
+  // } else {
+  // fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
+  // }
 };
 
 async function updateReadMe(generatedData) {
@@ -343,16 +343,19 @@ async function updateReadMe(generatedData) {
       `GET /repos/wearefuturegov/Outpost-Platform/contents/create-roadmap/ROADMAP.md`,
       {
         headers: {
-          accept: "application/vnd.github.raw+json",
+          accept: "application/vnd.github+json",
           "X-GitHub-Api-Version": "2022-11-28",
           authorization: process.env.GITHUB_TOKEN,
         },
       }
     );
-    const { path, sha, content, encoding, size } = res.data;
+    const { path, sha, content, encoding, size, html_url } = res.data;
 
-    console.log(path, sha, encoding, size);
-    commitNewReadme(path, sha, encoding, generatedData);
+    console.log(res);
+    console.log("Current version SHA: ${sha}. ${html_url}");
+    if (sha) {
+      commitNewReadme(path, sha, encoding, generatedData);
+    }
   } catch (error) {
     console.log(error);
   }
@@ -371,7 +374,7 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         path: "create-roadmap/ROADMAP.md",
         sha,
         headers: {
-          accept: "application/vnd.github.raw+json",
+          accept: "application/vnd.github+json",
           "X-GitHub-Api-Version": "2022-11-28",
           authorization: process.env.GITHUB_TOKEN,
         },
