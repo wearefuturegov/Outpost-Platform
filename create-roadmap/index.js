@@ -331,6 +331,7 @@ const outputRoadmap = (data) => {
   fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
 
   if (process.env.COMMIT_CHANGE === true) {
+    console.log(`Committing update to ROADMAP.md`);
     updateReadMe(generatedData);
   }
 };
