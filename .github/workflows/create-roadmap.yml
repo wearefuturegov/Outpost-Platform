@@ -1,4 +1,4 @@
-name: CI
+name: Update roadmap readme
 on:
   issues:
     types: [labeled, unlabeled]
