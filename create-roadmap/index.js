@@ -343,13 +343,15 @@ async function updateReadMe(generatedData) {
       `GET /repos/wearefuturegov/Outpost-Platform/contents/create-roadmap/ROADMAP.md`,
       {
         headers: {
-          accept: "application/vnd.github+json",
+          accept: "application/vnd.github.raw+json",
           "X-GitHub-Api-Version": "2022-11-28",
           authorization: process.env.GITHUB_TOKEN,
         },
       }
     );
-    const { path, sha, content, encoding } = res.data;
+    const { path, sha, content, encoding, size } = res.data;
+
+    console.log(path, sha, encoding, size);
     commitNewReadme(path, sha, encoding, generatedData);
   } catch (error) {
     console.log(error);
@@ -369,7 +371,7 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         path: "create-roadmap/ROADMAP.md",
         sha,
         headers: {
-          accept: "application/vnd.github+json",
+          accept: "application/vnd.github.raw+json",
           "X-GitHub-Api-Version": "2022-11-28",
           authorization: process.env.GITHUB_TOKEN,
         },
