@@ -349,6 +349,7 @@ async function updateReadMe(generatedData) {
       }
     );
     const { path, sha, content, encoding } = res.data;
+    console.log(path, sha, encoding);
     commitNewReadme(path, sha, encoding, generatedData);
   } catch (error) {
     console.log(error);
