@@ -330,7 +330,7 @@ const outputRoadmap = (data) => {
 
   fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
 
-  if (process.env.COMMIT_CHANGE) {
+  if (process.env.COMMIT_CHANGE === true) {
     updateReadMe(generatedData);
   }
 };
@@ -338,7 +338,13 @@ const outputRoadmap = (data) => {
 async function updateReadMe(generatedData) {
   try {
     const res = await request(
-      `GET /repos/wearefuturegov/Outpost-Platform/contents/create-roadmap/ROADMAP.md`
+      `GET /repos/wearefuturegov/Outpost-Platform/contents/create-roadmap/ROADMAP.md`,
+      {
+        headers: {
+          "X-GitHub-Api-Version": "2022-11-28",
+          authorization: process.env.GITHUB_TOKEN,
+        },
+      }
     );
     const { path, sha, content, encoding } = res.data;
     commitNewReadme(path, sha, encoding, generatedData);
@@ -356,6 +362,10 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         content: Buffer.from(updatedContent, "utf-8").toString(encoding),
         path,
         sha,
+        headers: {
+          "X-GitHub-Api-Version": "2022-11-28",
+          authorization: process.env.GITHUB_TOKEN,
+        },
       }
     );
   } catch (err) {
