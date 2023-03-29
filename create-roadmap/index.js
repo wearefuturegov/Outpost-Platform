@@ -343,7 +343,7 @@ async function updateReadMe(generatedData) {
       `GET /repos/wearefuturegov/Outpost-Platform/contents/create-roadmap/ROADMAP.md`,
       {
         headers: {
-          accept: "application/vnd.github+json",
+          Accept: "application/vnd.github+json",
           "X-GitHub-Api-Version": "2022-11-28",
           authorization: process.env.GITHUB_TOKEN,
         },
@@ -375,7 +375,7 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         type: "file",
         encoding: "base64",
         headers: {
-          accept: "application/vnd.github+json",
+          Accept: "application/vnd.github+json",
           "X-GitHub-Api-Version": "2022-11-28",
           authorization: process.env.GITHUB_TOKEN,
         },
