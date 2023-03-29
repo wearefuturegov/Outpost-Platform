@@ -328,7 +328,7 @@ const outputRoadmap = (data) => {
     .replace("###IMPROVE_OUTPOST_TASKS###", mermaidFour)
     .replace("###PROBLEMS_TO_SOLVE_TASKS###", mermaidFive);
 
-  fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
+  // fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
 
   console.log(`COMMIT_CHANGE is set to ${process.env.COMMIT_CHANGE}`);
   if (process.env.COMMIT_CHANGE === true) {
