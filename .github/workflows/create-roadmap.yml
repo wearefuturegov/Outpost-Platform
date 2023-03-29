@@ -5,6 +5,9 @@ on:
 jobs:
   buildRoadmap:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
     steps:
       - uses: actions/checkout@v3
 
@@ -16,9 +19,6 @@ jobs:
         run: npm ci
 
       - name: Create chart post
-        permissions:
-          contents: write
-          issues: read
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMIT_CHANGE: TRUE
