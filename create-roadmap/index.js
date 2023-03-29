@@ -372,6 +372,7 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         content: Buffer.from("Test", "utf-8").toString(encoding),
         path: "create-roadmap/ROADMAP.md",
         committer: [{ name: "fg-dev bot", email: "fg-dev@tpximpact.com" }],
+        branch: "main",
         sha,
         type: "file",
         encoding: "base64",
