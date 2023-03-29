@@ -98,7 +98,7 @@ const easierToAdoptMermaid = (data) => {
       mermaid += `    end\n\n`;
     }
   }
-  console.log(mermaid);
+  // console.log(mermaid);
   return mermaid;
 };
 
@@ -120,7 +120,7 @@ const improveDataMermaid = (data) => {
   mermaid += `${mermaidData1.join("\n")}\n`;
   mermaid += `    end\n\n`;
 
-  console.log(mermaid);
+  // console.log(mermaid);
   return mermaid;
 };
 const ImproveScoutMermaid = (data) => {
@@ -157,7 +157,7 @@ const ImproveScoutMermaid = (data) => {
       mermaid += `    end\n\n`;
     }
   }
-  console.log(mermaid);
+  // console.log(mermaid);
   return mermaid;
 };
 const ImproveOutpostMermaid = (data) => {
@@ -284,7 +284,7 @@ const ImproveOutpostMermaid = (data) => {
       mermaid += `    end\n\n`;
     }
   }
-  console.log(mermaid);
+  // console.log(mermaid);
   return mermaid;
 };
 const ProblemsToSolveMermaid = (data) => {
@@ -305,7 +305,7 @@ const ProblemsToSolveMermaid = (data) => {
   mermaid += `${mermaidData1.join("\n")}\n`;
   mermaid += `    end\n\n`;
 
-  console.log(mermaid);
+  // console.log(mermaid);
   return mermaid;
 };
 
@@ -328,12 +328,12 @@ const outputRoadmap = (data) => {
     .replace("###IMPROVE_OUTPOST_TASKS###", mermaidFour)
     .replace("###PROBLEMS_TO_SOLVE_TASKS###", mermaidFive);
 
-  // if (process.env.COMMIT_CHANGE === "true") {
-  console.log(`Committing update to ROADMAP.md`);
-  updateReadMe(generatedData);
-  // } else {
-  // fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
-  // }
+  if (process.env.COMMIT_CHANGE === "true") {
+    console.log(`Committing update to ROADMAP.md`);
+    updateReadMe(generatedData);
+  } else {
+    fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
+  }
 };
 
 async function updateReadMe(generatedData) {
@@ -371,6 +371,7 @@ async function commitNewReadme(path, sha, encoding, updatedContent) {
         message: "Update ROADMAP",
         content: Buffer.from("Test", "utf-8").toString(encoding),
         path: "create-roadmap/ROADMAP.md",
+        committer: [{ name: "fg-dev bot", email: "fg-dev@tpximpact.com" }],
         sha,
         type: "file",
         encoding: "base64",
