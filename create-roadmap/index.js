@@ -328,7 +328,7 @@ const outputRoadmap = (data) => {
     .replace("###IMPROVE_OUTPOST_TASKS###", mermaidFour)
     .replace("###PROBLEMS_TO_SOLVE_TASKS###", mermaidFive);
 
-  fs.writeFileSync("ROADMAP.md", generatedData);
+  fs.writeFileSync("create-roadmap/ROADMAP.md", generatedData);
 
   if (process.env.COMMIT_CHANGE) {
     updateReadMe(generatedData);
@@ -338,7 +338,7 @@ const outputRoadmap = (data) => {
 async function updateReadMe(generatedData) {
   try {
     const res = await request(
-      `GET /repos/wearefuturegov/Outpost-Platform/contents/ROADMAP.md`
+      `GET /repos/wearefuturegov/Outpost-Platform/contents/create-roadmap/ROADMAP.md`
     );
     const { path, sha, content, encoding } = res.data;
     commitNewReadme(path, sha, encoding, generatedData);
