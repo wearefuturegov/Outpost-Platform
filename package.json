@@ -3,16 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "create-roadmap.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-roadmap": "node ./create-roadmap/index.js",
-    "build-roadmap:dev": "nodemon ./create-roadmap/index.js"
+    "build-roadmap:dev": "nodemon ./create-roadmap/index.js",
+    "view-mindmap": "parcel create-roadmap/mindmap.html --dist-dir create-roadmap/dist/",
+    "build-mindmap": "parcel build create-roadmap/mindmap.html --dist-dir create-roadmap/dist/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@octokit/request": "^6.2.3",
     "dotenv": "^16.0.3",
-    "nodemon": "^2.0.22",
-    "@octokit/request": "^6.2.3"
+    "mermaid": "^10.0.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
   }
 }

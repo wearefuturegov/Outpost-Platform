@@ -40,21 +40,31 @@ flowchart
         %% 1.1~ Remove reliance on tools others may not have - tasks
 
     subgraph RemoveRelianceOnToolsTasks[ ]
-     RemoveRelianceOnToolsTask0("Integrate Outpost services<br />with WordPress<br />"):::EasierToAdoptTasks
-     click RemoveRelianceOnToolsTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/6"
-     RemoveRelianceOnToolsTask1("Outpost widget<br />"):::EasierToAdoptTasks
-     click RemoveRelianceOnToolsTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/5"
-     RemoveRelianceOnToolsTask2("Show Outpost services on any<br />HTML site<br />"):::EasierToAdoptTasks
-     click RemoveRelianceOnToolsTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/4"
-     RemoveRelianceOnToolsTask3("Integrate Outpost services<br />into Drupal/LocalGov Drupal<br />"):::EasierToAdoptTasks
-     click RemoveRelianceOnToolsTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/3"
+     RemoveRelianceOnToolsTask0("Create a Drupal module to<br />embed standalone Scout<br />"):::EasierToAdoptTasks
+     click RemoveRelianceOnToolsTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/85"
+     RemoveRelianceOnToolsTask1("Scout is a standalone package<br />that can be displayed on any<br />website<br />"):::EasierToAdoptTasks
+     click RemoveRelianceOnToolsTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/84"
+     RemoveRelianceOnToolsTask2("Outpost can be hosted on any<br />hosting platform<br />"):::EasierToAdoptTasks
+     click RemoveRelianceOnToolsTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/83"
+     RemoveRelianceOnToolsTask3("Remove reliance on file<br />upload providers<br />"):::EasierToAdoptTasks
+     click RemoveRelianceOnToolsTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/82"
+     RemoveRelianceOnToolsTask4("Integrate Outpost services<br />with WordPress<br />"):::EasierToAdoptTasks
+     click RemoveRelianceOnToolsTask4 href "https://github.com/wearefuturegov/Outpost-Platform/issues/6"
+     RemoveRelianceOnToolsTask5("Outpost widget<br />"):::EasierToAdoptTasks
+     click RemoveRelianceOnToolsTask5 href "https://github.com/wearefuturegov/Outpost-Platform/issues/5"
+     RemoveRelianceOnToolsTask6("Show Outpost services on any<br />HTML site<br />"):::EasierToAdoptTasks
+     click RemoveRelianceOnToolsTask6 href "https://github.com/wearefuturegov/Outpost-Platform/issues/4"
+     RemoveRelianceOnToolsTask7("Integrate Outpost services<br />into Drupal/LocalGov Drupal<br />"):::EasierToAdoptTasks
+     click RemoveRelianceOnToolsTask7 href "https://github.com/wearefuturegov/Outpost-Platform/issues/3"
     end
 
     %% 1.2~ Make set up easier - tasks
 
     subgraph MakeSetupEasierTasks[ ]
-     MakeSetupEasierTask0("An easier way to set-up<br />Ofsted feed<br />"):::EasierToAdoptTasks
-     click MakeSetupEasierTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/7"
+     MakeSetupEasierTask0("Exploring how to make data<br />imports easier from Open<br />Objects<br />"):::EasierToAdoptTasks
+     click MakeSetupEasierTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/86"
+     MakeSetupEasierTask1(" Make Ofsted feed more easily<br />reusable (An easier way to<br />set-up Ofsted feed)<br />"):::EasierToAdoptTasks
+     click MakeSetupEasierTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/7"
     end
 
     %% 1.3~ Make customisation easier - tasks
@@ -197,17 +207,17 @@ flowchart
      click ImproveScoutMiscTask4 href "https://github.com/wearefuturegov/Outpost-Platform/issues/18"
     end
 
-    %% 3.1~ Search - tasks
+    %% 3.2~ Search - tasks
 
-    subgraph ImproveScoutMiscTasks[ ]
-     ImproveScoutMiscTask0("Autocomplete text search<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/26"
-     ImproveScoutMiscTask1("Search returns results by<br />relevancy<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/25"
-     ImproveScoutMiscTask2("Search can show related<br />services<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/24"
-     ImproveScoutMiscTask3("Search can pick up spelling<br />errors<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/23"
+    subgraph ImproveScoutSearchTasks[ ]
+     ImproveScoutSearchTask0("Autocomplete text search<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/26"
+     ImproveScoutSearchTask1("Search returns results by<br />relevancy<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/25"
+     ImproveScoutSearchTask2("Search can show related<br />services<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/24"
+     ImproveScoutSearchTask3("Search can pick up spelling<br />errors<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/23"
     end
 
 
@@ -444,7 +454,7 @@ flowchart
 
 
     classDef ProblemsToSolve fill:#d0d481,stroke:none
-    classDef ProblemsToSolveTaskStyle fill:#fff,stroke:#d0d481,color:#8e7158
+    classDef ProblemsToSolveTasksStyle fill:#fff,stroke:#d0d481,color:#8e7158
 
     %% Top level
 
@@ -454,7 +464,7 @@ flowchart
         %% 5 Problems to solve - tasks
 
     subgraph ProblemsToSolveTasks[ ]
-     ProblemsToSolveTask0("Define how to rank nationwide<br />(or county-wide) services in<br />location based searches<br />"):::ProblemsToSolveTaskStyle0
+     ProblemsToSolveTask0("Define how to rank nationwide<br />(or county-wide) services in<br />location based searches<br />"):::ProblemsToSolveTasksStyle
      click ProblemsToSolveTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/27"
     end
 
@@ -464,5 +474,218 @@ flowchart
 
     %% Problems to solve
     ProblemsToSolve  --> ProblemsToSolveTasks
+
+```
+
+
+# 🧠 Mindmap
+
+```mermaid
+%%{
+init:
+	{
+  "theme": "neutral"
+  }
+}%%
+mindmap
+  root[Outpost Platform]
+    EasierToAdopt[Make the Outpost platform<br />easier to adopt for other<br />local authorities]
+    :::EasierToAdopt
+        RemoveRelianceOnTools[Remove reliance on specific<br />tools that other local<br />authorities might not have]
+        :::EasierToAdoptLv2
+            RemoveRelianceOnToolsTask0("Create a Drupal module to<br />embed standalone Scout<br />")
+            :::EasierToAdoptTasks
+            RemoveRelianceOnToolsTask1("Scout is a standalone package<br />that can be displayed on any<br />website<br />")
+            :::EasierToAdoptTasks
+            RemoveRelianceOnToolsTask2("Outpost can be hosted on any<br />hosting platform<br />")
+            :::EasierToAdoptTasks
+            RemoveRelianceOnToolsTask3("Remove reliance on file<br />upload providers<br />")
+            :::EasierToAdoptTasks
+            RemoveRelianceOnToolsTask4("Integrate Outpost services<br />with WordPress<br />")
+            :::EasierToAdoptTasks
+            RemoveRelianceOnToolsTask5("Outpost widget<br />")
+            :::EasierToAdoptTasks
+            RemoveRelianceOnToolsTask6("Show Outpost services on any<br />HTML site<br />")
+            :::EasierToAdoptTasks
+            RemoveRelianceOnToolsTask7("Integrate Outpost services<br />into Drupal/LocalGov Drupal<br />")
+            :::EasierToAdoptTasks
+        MakeSetupEasier[Make setup easier]
+        :::EasierToAdoptLv2
+            MakeSetupEasierTask0("Exploring how to make data<br />imports easier from Open<br />Objects<br />")
+            :::EasierToAdoptTasks
+            MakeSetupEasierTask1(" Make Ofsted feed more easily<br />reusable (An easier way to<br />set-up Ofsted feed)<br />")
+            :::EasierToAdoptTasks
+        MakeCustomisationEasier[Make customisation easier]
+        :::EasierToAdoptLv2
+            MakeCustomisationEasierTask0("Remove theming from Scout<br />")
+            :::EasierToAdoptTasks
+            MakeCustomisationEasierTask1("Add more customisation<br />options in scout<br />")
+            :::EasierToAdoptTasks
+            MakeCustomisationEasierTask2("Modularise Outpost to allow<br />bespoke features<br />")
+            :::EasierToAdoptTasks
+        MakeDevelopmentEasier[Make development easier]
+        :::EasierToAdoptLv2
+            MakeDevelopmentEasierTask0(Design System prototyping kit)
+            :::EasierToAdoptTasks
+            MakeDevelopmentEasierTask1(Boilerplate for creating other apps in Outpost ecosystem )
+            :::EasierToAdoptTasks
+            MakeDevelopmentEasierTask2(Design System - HTML components)
+            :::EasierToAdoptTasks
+
+    ImproveDataQuality[Improve data quality and ease<br />of sharing]
+    :::ImproveDataQuality
+        ImproveDataQualityTask0("Enable easier sharing of data<br />between Outpost instances<br />")
+        :::ImproveDataQualityTasks
+        ImproveDataQualityTask1("Support for ORUK vocabularies<br />")
+        :::ImproveDataQualityTasks
+        ImproveDataQualityTask2("ORUK V3 Outpost compliance<br />")
+        :::ImproveDataQualityTasks
+        ImproveDataQualityTask3("Easy import data from other<br />ORUK source<br />")
+        :::ImproveDataQualityTasks
+
+    ImproveScout[Improvements to Scout]
+    :::ImproveScout
+        ImproveScoutMisc[Misc]
+        :::ImproveScoutLv2
+            ImproveScoutMiscTask0("Public vs. professional views<br />for Scout<br />")
+            :::ImproveScoutTasks
+            ImproveScoutMiscTask1("Authentication for Scout<br />")
+            :::ImproveScoutTasks
+            ImproveScoutMiscTask2("Services can be sorted (e.g.<br />by distance)<br />")
+            :::ImproveScoutTasks
+            ImproveScoutMiscTask3("Filters to have AND logic<br />rather than OR<br />")
+            :::ImproveScoutTasks
+            ImproveScoutMiscTask4("Directory users can see<br />second level category<br />taxonomy when filtering<br />")
+            :::ImproveScoutTasks
+        ImproveScoutSearch[Search]
+        :::ImproveScoutLv2
+            ImproveScoutSearchTask0("Autocomplete text search<br />")
+            :::ImproveScoutTasks
+            ImproveScoutSearchTask1("Search returns results by<br />relevancy<br />")
+            :::ImproveScoutTasks
+            ImproveScoutSearchTask2("Search can show related<br />services<br />")
+            :::ImproveScoutTasks
+            ImproveScoutSearchTask3("Search can pick up spelling<br />errors<br />")
+            :::ImproveScoutTasks
+
+    ImproveOutpost[Make Outpost a better, easier<br />to use product]
+    :::ImproveOutpost
+        OutpostEfficientAndIntuitive[Outpost is more efficient and<br />intuitive to use]
+        :::ImproveOutpostLv2
+            OutpostEfficientAndIntuitiveMisc[Misc]
+            :::ImproveOutpostLv3
+                OutpostEfficientAndIntuitiveMiscTask0("Service owners are reminded<br />to update their listings<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveMiscTask1("Service owners can belong to<br />more than one organisation<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveMiscTask2("Passwordless log-in<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveMiscTask3("Service owners can invite<br />colleagues to join their<br />organisation in Outpost<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveMiscTask4("More granular roles and<br />permissions<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveMiscTask5("Taxonomy dropdown typeahead<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveMiscTask6("Services in Outpost can be<br />filtered by multiple taxonomy<br />terms<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveMiscTask7("Services can be updated in<br />bulk<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveMiscTask8("Services can be imported in<br />bulk via the Outpost<br />interface (developer not<br />needed)<br />")
+                :::ImproveOutpostTasks
+        OutpostEfficientAndIntuitive[Outpost is more efficient and<br />intuitive to use]
+        :::ImproveOutpostLv2
+            OutpostEfficientAndIntuitiveFeedback[Misc]
+            :::ImproveOutpostLv3
+                OutpostEfficientAndIntuitiveFeedbackTask0("A way to acknowledge when<br />feedback has been actioned<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveFeedbackTask1("A way to see which feedback<br />has been addressed<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveFeedbackTask2("Encourage service providers<br />not to use feedback to make<br />changes to their listing<br />")
+                :::ImproveOutpostTasks
+        OutpostEfficientAndIntuitive[Outpost is more efficient and<br />intuitive to use]
+        :::ImproveOutpostLv2
+            OutpostEfficientAndIntuitiveApprovals[Misc]
+            :::ImproveOutpostLv3
+                OutpostEfficientAndIntuitiveApprovalsTask0("Automatic approvals<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveApprovalsTask1("Services can be approved in<br />bulk<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveApprovalsTask2("Read-only view for admins<br />")
+                :::ImproveOutpostTasks
+        OutpostEfficientAndIntuitive[Outpost is more efficient and<br />intuitive to use]
+        :::ImproveOutpostLv2
+            OutpostEfficientAndIntuitiveContentUpdates[Misc]
+            :::ImproveOutpostLv3
+                OutpostEfficientAndIntuitiveContentUpdatesTask0("Labels > Add labels to group<br />services<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveContentUpdatesTask1("Visibility > Show or hide<br />listing<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveContentUpdatesTask2("Links > Social media links?<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveContentUpdatesTask3("Scheduling > Date and time of<br />service<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveContentUpdatesTask4("Contacts -> Who someone<br />should contact if they want<br />to know more about the<br />service<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveContentUpdatesTask5("Website -> website for the<br />organisation providing the<br />service AND website for the<br />activity or service<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveContentUpdatesTask6("Parent organisation -><br />organisation providing the<br />service<br />")
+                :::ImproveOutpostTasks
+        NecessaryInformationInServiceListings[Service listings contain all<br />the necessary information for<br />someone to understand what it<br />is, who it's for, and how<br />it's run]
+        :::ImproveOutpostLv2
+            NecessaryInformationInServiceListingsTask0("Local offer mandatory<br />description unlinked from the<br />filters <br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask1("Childcare filters: does<br />school pick up, has childcare<br />vacancies, holiday<br />activities, SEN inclusive<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask2("Monday-Friday option for<br />services that run at the same<br />time each day<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask3("Free text field for fee<br />options<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask4("Service providers can select<br />whether their service needs a<br />referral or not<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask5("CQC information shown in a<br />listing<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask6("Services can be marked to<br />show they begin when someone<br />signs up (e.g. a 12-week<br />programme)<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask7("Admins can change what<br />options are shown under SEND<br />needs<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask8("Admins can change what<br />options are shown under<br />accessibility<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask9("Admins can change what<br />options are shown under<br />suitability<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask10("Services that run at multiple<br />locations can have different<br />schedules at each one<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask11("Services can be marked as<br />being delivered online or<br />remotely<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask12("Logos, images and videos can<br />be added to service listings<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask13("Documents can be uploaded in<br />service listings<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask14("Services can occur with<br />irregular schedules (e.g.<br />first Monday of the month)<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask15("Services can be shown as<br />happening on a specific date<br />")
+            :::ImproveOutpostTasks
+        OrganisationsMoreDetailed[Organisations contain more detail]
+        :::ImproveOutpostLv2
+            OrganisationsMoreDetailedTask0("Service owners can add<br />additional information about<br />an organisation (e.g. file<br />uploads and images)<br />")
+            :::ImproveOutpostTasks
+            OrganisationsMoreDetailedTask1("Service owners can edit<br />organisation information<br />")
+            :::ImproveOutpostTasks
+        ServiceListingsAccessible[Service listings are more<br />accessible and easy to read]
+        :::ImproveOutpostLv2
+            ServiceListingsAccessibleTask0("Direct call to action<br />(button) to book onto a<br />service<br />")
+            :::ImproveOutpostTasks
+            ServiceListingsAccessibleTask1("Spellchecker within Outpost<br />")
+            :::ImproveOutpostTasks
+            ServiceListingsAccessibleTask2("Service descriptions can be<br />formatted<br />")
+            :::ImproveOutpostTasks
+        Quirks[Fixing quirks]
+        :::ImproveOutpostLv2
+            QuirksTask0("Deduping locations<br />")
+            :::ImproveOutpostTasks
+
+    ProblemsToSolve[Problems to solve]
+    :::ProblemsToSolve
+        ProblemsToSolveTask0("Define how to rank nationwide<br />(or county-wide) services in<br />location based searches<br />")
+        :::ProblemsToSolveTasksStyle
 
 ```

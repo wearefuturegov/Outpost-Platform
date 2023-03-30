@@ -1,0 +1,17 @@
+mindmap
+  root[Outpost Platform]
+    EasierToAdopt[Make the Outpost platform<br />easier to adopt for other<br />local authorities]
+    :::EasierToAdopt
+###EASIER_TO_ADOPT_TASKS###
+    ImproveDataQuality[Improve data quality and ease<br />of sharing]
+    :::ImproveDataQuality
+###IMPROVE_DATA_TASKS###
+    ImproveScout[Improvements to Scout]
+    :::ImproveScout
+###IMPROVE_SCOUT_TASKS###
+    ImproveOutpost[Make Outpost a better, easier<br />to use product]
+    :::ImproveOutpost
+###IMPROVE_OUTPOST_TASKS###
+    ProblemsToSolve[Problems to solve]
+    :::ProblemsToSolve
+###PROBLEMS_TO_SOLVE_TASKS###

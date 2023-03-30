@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style></style>
+  </head>
+
+  <body>
+
+<pre class="mermaid">
+
+###CONTENT###
+
+</pre>
+
+    <script type="module">
+     import mermaid from "mermaid";
+
+      const init = async () => {
+        let config = {
+          startOnLoad: false,
+          flowchart: { useMaxWidth: false, htmlLabels: true },
+        };
+        await mermaid.run({
+          querySelector: ".mermaid",
+        });
+
+        const mermaidId = document
+          .getElementById("chart")
+          .querySelector("svg").id;
+
+        var styles = `
+        #${mermaidId} .edge-depth-0 {
+          stroke-width: 10 !important;
+        }
+
+        #${mermaidId} .edge-depth-1 {
+          stroke-width: 8 !important;
+        }
+
+        #${mermaidId} .edge-depth-2 {
+          stroke-width: 4 !important;
+        }
+
+        #${mermaidId} .edge-depth-3 {
+          stroke-width: 2 !important;
+        }
+
+
+        /* Easier to adopt */
+
+        #${mermaidId} .EasierToAdopt rect {
+            fill: #f69f95 !important;
+            stroke-width: 0px !important;
+        }
+
+        #${mermaidId} .EasierToAdopt text {
+            fill: #694441 !important;
+        }
+
+        #${mermaidId} .EasierToAdoptLv2 rect {
+            fill: #ffd7d6 !important;
+            stroke-width: 0px !important;
+        }
+
+        #${mermaidId} .EasierToAdoptLv2 text {
+            fill: #694441 !important;
+        }
+
+        #${mermaidId} .EasierToAdoptTasks rect {
+            fill: #fff !important;
+            stroke: #f69f95 !important;
+            stroke-width: 2px !important;
+        }
+
+        #${mermaidId} .EasierToAdoptTasks text {
+          fill: #bd7a73 !important;
+        }
+
+
+        #${mermaidId} .section-edge-0 {
+          stroke: #f69f95 !important; 
+        }
+        #${mermaidId} .section-edge-0.edge-depth-0 {
+          stroke: #f69f95 !important; 
+        }
+        #${mermaidId} .section-edge-0.edge-depth-1 {
+          stroke: #ffd7d6 !important; 
+        }
+        #${mermaidId} .section-edge-0.edge-depth-2 {
+          stroke: #ffd7d6 !important; 
+        }
+
+
+
+        /* Improve data quality */
+
+        #${mermaidId} .ImproveDataQuality rect {
+            fill: #ffcc80 !important;
+            stroke-width: 0px !important;
+        }
+
+
+        #${mermaidId} .ImproveDataQuality text {
+            fill: #7a5c30 !important;
+        }
+
+        #${mermaidId} .ImproveDataQualityTasks rect {
+            fill: #fff !important;
+            stroke: #ffcc80 !important;
+            stroke-width: 2px !important;
+        }
+
+        #${mermaidId} .ImproveDataQualityTasks text {
+          fill: #b59059 !important;
+        }
+
+
+        #${mermaidId} .section-edge-1 {
+          stroke: #ffcc80 !important; 
+        }
+        #${mermaidId} .section-edge-1.edge-depth-0 {
+          stroke: #ffcc80 !important; 
+        }
+        #${mermaidId} .section-edge-1.edge-depth-1 {
+          stroke: #ffcc80 !important; 
+        }
+        #${mermaidId} .section-edge-1.edge-depth-2 {
+          stroke: #ffcc80 !important; 
+        }
+
+
+
+
+            /* Improve Scout */
+
+        #${mermaidId} .ImproveScout rect {
+            fill: #abcdde !important;
+            stroke-width: 0px !important;
+        }
+
+
+        #${mermaidId} .ImproveScoutLv2 rect {
+            fill: #d5edf8 !important;
+            stroke-width: 0px !important;
+        }
+
+
+        #${mermaidId} .ImproveScoutTasks rect {
+            fill: #fff !important;
+            stroke: #abcdde !important;
+            stroke-width: 2px !important;
+        }
+
+        #${mermaidId} .ImproveScoutTasks text {
+          fill: #586870 !important;
+        }
+
+
+
+        #${mermaidId} .section-edge-2 {
+          stroke: #abcdde !important; 
+        }
+        #${mermaidId} .section-edge-2.edge-depth-0 {
+          stroke: #abcdde !important; 
+        }
+        #${mermaidId} .section-edge-2.edge-depth-1 {
+          stroke: #abcdde !important; 
+        }
+        #${mermaidId} .section-edge-2.edge-depth-2 {
+          stroke: #abcdde !important; 
+        }
+
+
+            /* Improve data quality */
+
+        #${mermaidId} .ImproveOutpost rect {
+            fill: #cdbdeb !important;
+            stroke-width: 0px !important;
+        }
+
+        #${mermaidId} .ImproveOutpost text {
+            fill: #776d8a !important;
+        }
+
+
+        #${mermaidId} .ImproveOutpostLv2 rect {
+            fill: #ded5ed !important;
+            stroke-width: 0px !important;
+        }
+
+
+        #${mermaidId} .ImproveOutpostLv2 text {
+            fill: #776d8a !important;
+        }
+
+
+
+        #${mermaidId} .ImproveOutpostLv3 rect {
+            fill: #eae6f0 !important;
+            stroke-width: 0px !important;
+        }
+
+
+        #${mermaidId} .ImproveOutpostLv3 text {
+            fill: #776d8a !important;
+        }
+
+
+
+        #${mermaidId} .ImproveOutpostTasks rect {
+            fill: #fff !important;
+            stroke: #cdbdeb !important;
+            stroke-width: 2px !important;
+        }
+
+
+        #${mermaidId} .ImproveOutpostTasks text {
+            fill: #9789b0 !important;
+        }
+
+
+
+        #${mermaidId} .section-edge-3 {
+          stroke: #cdbdeb !important; 
+        }
+        #${mermaidId} .section-edge-3.edge-depth-0 {
+          stroke: #cdbdeb !important; 
+        }
+        #${mermaidId} .section-edge-3.edge-depth-1 {
+          stroke: #cdbdeb !important; 
+        }
+        #${mermaidId} .section-edge-3.edge-depth-2 {
+          stroke: #cdbdeb !important; 
+        }
+
+
+
+            /* Improve data quality */
+
+        #${mermaidId} .ProblemsToSolve rect {
+            fill: #d0d481 !important;
+            stroke-width: 0px !important;
+        }
+
+        #${mermaidId} .ProblemsToSolve text {
+            fill: #64663e !important;
+        }
+
+        #${mermaidId} .ProblemsToSolveTasksStyle rect {
+            fill: #fff !important;
+            stroke: #d0d481 !important;
+            stroke-width: 2px !important;
+        }
+
+        #${mermaidId} .ProblemsToSolveTasksStyle text {
+            fill: #999c5f !important;
+        }
+
+
+
+        #${mermaidId} .section-edge-4 {
+          stroke: #d0d481 !important; 
+        }
+        #${mermaidId} .section-edge-4.edge-depth-0 {
+          stroke: #d0d481 !important; 
+        }
+        #${mermaidId} .section-edge-4.edge-depth-1 {
+          stroke: #d0d481 !important; 
+        }
+        #${mermaidId} .section-edge-4.edge-depth-2 {
+          stroke: #d0d481 !important; 
+        }
+
+
+
+
+        `;
+
+        var styleSheet = document.createElement("style");
+        styleSheet.innerText = styles;
+        document.head.appendChild(styleSheet);
+      };
+
+      init();
+    </script>
+  </body>
+</html>
