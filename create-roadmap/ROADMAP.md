@@ -481,12 +481,6 @@ flowchart
 # 🧠 Mindmap
 
 ```mermaid
-%%{
-init:
-	{
-  "theme": "neutral"
-  }
-}%%
 mindmap
   root[Outpost Platform]
     EasierToAdopt[Make the Outpost platform<br />easier to adopt for other<br />local authorities]
