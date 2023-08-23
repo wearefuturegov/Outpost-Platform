@@ -40,7 +40,7 @@ flowchart
         %% 1.1~ Remove reliance on tools others may not have - tasks
 
     subgraph RemoveRelianceOnToolsTasks[ ]
-     RemoveRelianceOnToolsTask0("Create a Drupal module to<br />embed standalone Scout<br />"):::EasierToAdoptTasks
+     RemoveRelianceOnToolsTask0("Create a Drupal Module for<br />Embedding Standalone Scout<br />"):::EasierToAdoptTasks
      click RemoveRelianceOnToolsTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/85"
      RemoveRelianceOnToolsTask1("Scout is a standalone package<br />that can be displayed on any<br />website<br />"):::EasierToAdoptTasks
      click RemoveRelianceOnToolsTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/84"
@@ -136,14 +136,18 @@ flowchart
         %% 2.0_ Improve data quality and ease of sharing - tasks
 
     subgraph ImproveDataQualityTasks[ ]
-     ImproveDataQualityTask0("Enable easier sharing of data<br />between Outpost instances<br />"):::ImproveDataQualityTasks
-     click ImproveDataQualityTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/17"
-     ImproveDataQualityTask1("Support for ORUK vocabularies<br />"):::ImproveDataQualityTasks
-     click ImproveDataQualityTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/16"
-     ImproveDataQualityTask2("ORUK V3 Outpost compliance<br />"):::ImproveDataQualityTasks
-     click ImproveDataQualityTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/15"
-     ImproveDataQualityTask3("Easy import data from other<br />ORUK source<br />"):::ImproveDataQualityTasks
-     click ImproveDataQualityTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/14"
+     ImproveDataQualityTask0("Add a checkbox for<br />nation/county wide service<br />"):::ImproveDataQualityTasks
+     click ImproveDataQualityTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/96"
+     ImproveDataQualityTask1("Add new API endpoint to<br />expose available options for<br />custom fields<br />"):::ImproveDataQualityTasks
+     click ImproveDataQualityTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/90"
+     ImproveDataQualityTask2("Enable easier sharing of data<br />between Outpost instances<br />"):::ImproveDataQualityTasks
+     click ImproveDataQualityTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/17"
+     ImproveDataQualityTask3("Support for ORUK vocabularies<br />"):::ImproveDataQualityTasks
+     click ImproveDataQualityTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/16"
+     ImproveDataQualityTask4("ORUK V3 Outpost compliance<br />"):::ImproveDataQualityTasks
+     click ImproveDataQualityTask4 href "https://github.com/wearefuturegov/Outpost-Platform/issues/15"
+     ImproveDataQualityTask5("Easy import data from other<br />ORUK source<br />"):::ImproveDataQualityTasks
+     click ImproveDataQualityTask5 href "https://github.com/wearefuturegov/Outpost-Platform/issues/14"
     end
 
 
@@ -195,29 +199,39 @@ flowchart
         %% 3.1~ Misc - tasks
 
     subgraph ImproveScoutMiscTasks[ ]
-     ImproveScoutMiscTask0("Public vs. professional views<br />for Scout<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/22"
-     ImproveScoutMiscTask1("Authentication for Scout<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/21"
-     ImproveScoutMiscTask2("Services can be sorted (e.g.<br />by distance)<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/20"
-     ImproveScoutMiscTask3("Filters to have AND logic<br />rather than OR<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/19"
-     ImproveScoutMiscTask4("Directory users can see<br />second level category<br />taxonomy when filtering<br />"):::ImproveScoutTasks
-     click ImproveScoutMiscTask4 href "https://github.com/wearefuturegov/Outpost-Platform/issues/18"
+     ImproveScoutMiscTask0("Add new filter for show only<br />sen inclusive records in<br />Scout<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/95"
+     ImproveScoutMiscTask1("Add new API endpoint to<br />expose available options for<br />custom fields<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/90"
+     ImproveScoutMiscTask2("Add sort by option in scout<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/89"
+     ImproveScoutMiscTask3("Implement cookie compliant<br />event tracking in Scout<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/87"
+     ImproveScoutMiscTask4("Public vs. professional views<br />for Scout<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask4 href "https://github.com/wearefuturegov/Outpost-Platform/issues/22"
+     ImproveScoutMiscTask5("Authentication for Scout<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask5 href "https://github.com/wearefuturegov/Outpost-Platform/issues/21"
+     ImproveScoutMiscTask6("Services can be sorted (e.g.<br />by distance)<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask6 href "https://github.com/wearefuturegov/Outpost-Platform/issues/20"
+     ImproveScoutMiscTask7("Filters to have AND logic<br />rather than OR<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask7 href "https://github.com/wearefuturegov/Outpost-Platform/issues/19"
+     ImproveScoutMiscTask8("Directory users can see<br />second level category<br />taxonomy when filtering<br />"):::ImproveScoutTasks
+     click ImproveScoutMiscTask8 href "https://github.com/wearefuturegov/Outpost-Platform/issues/18"
     end
 
     %% 3.2~ Search - tasks
 
     subgraph ImproveScoutSearchTasks[ ]
-     ImproveScoutSearchTask0("Autocomplete text search<br />"):::ImproveScoutTasks
-     click ImproveScoutSearchTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/26"
-     ImproveScoutSearchTask1("Search returns results by<br />relevancy<br />"):::ImproveScoutTasks
-     click ImproveScoutSearchTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/25"
-     ImproveScoutSearchTask2("Search can show related<br />services<br />"):::ImproveScoutTasks
-     click ImproveScoutSearchTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/24"
-     ImproveScoutSearchTask3("Search can pick up spelling<br />errors<br />"):::ImproveScoutTasks
-     click ImproveScoutSearchTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/23"
+     ImproveScoutSearchTask0("Add fuzzy search into Outpost<br />API (keywords)<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/88"
+     ImproveScoutSearchTask1("Autocomplete text search<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/26"
+     ImproveScoutSearchTask2("Search returns results by<br />relevancy<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/25"
+     ImproveScoutSearchTask3("Search can show related<br />services<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/24"
+     ImproveScoutSearchTask4("Search can pick up spelling<br />errors<br />"):::ImproveScoutTasks
+     click ImproveScoutSearchTask4 href "https://github.com/wearefuturegov/Outpost-Platform/issues/23"
     end
 
 
@@ -289,7 +303,7 @@ flowchart
      click OutpostEfficientAndIntuitiveMiscTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/36"
      OutpostEfficientAndIntuitiveMiscTask1("Service owners can belong to<br />more than one organisation<br />"):::ImproveOutpostTasks
      click OutpostEfficientAndIntuitiveMiscTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/35"
-     OutpostEfficientAndIntuitiveMiscTask2("Passwordless log-in<br />"):::ImproveOutpostTasks
+     OutpostEfficientAndIntuitiveMiscTask2("Passwordless log-in aka Magic<br />link login<br />"):::ImproveOutpostTasks
      click OutpostEfficientAndIntuitiveMiscTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/34"
      OutpostEfficientAndIntuitiveMiscTask3("Service owners can invite<br />colleagues to join their<br />organisation in Outpost<br />"):::ImproveOutpostTasks
      click OutpostEfficientAndIntuitiveMiscTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/33"
@@ -308,12 +322,14 @@ flowchart
     %% 4.1.2~ Feedback - tasks
 
     subgraph OutpostEfficientAndIntuitiveFeedbackTasks[ ]
-     OutpostEfficientAndIntuitiveFeedbackTask0("A way to acknowledge when<br />feedback has been actioned<br />"):::ImproveOutpostTasks
-     click OutpostEfficientAndIntuitiveFeedbackTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/39"
-     OutpostEfficientAndIntuitiveFeedbackTask1("A way to see which feedback<br />has been addressed<br />"):::ImproveOutpostTasks
-     click OutpostEfficientAndIntuitiveFeedbackTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/38"
-     OutpostEfficientAndIntuitiveFeedbackTask2("Encourage service providers<br />not to use feedback to make<br />changes to their listing<br />"):::ImproveOutpostTasks
-     click OutpostEfficientAndIntuitiveFeedbackTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/37"
+     OutpostEfficientAndIntuitiveFeedbackTask0("Mark feedback in Outpost as<br />doing/done <br />"):::ImproveOutpostTasks
+     click OutpostEfficientAndIntuitiveFeedbackTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/94"
+     OutpostEfficientAndIntuitiveFeedbackTask1("A way to acknowledge when<br />feedback has been actioned<br />"):::ImproveOutpostTasks
+     click OutpostEfficientAndIntuitiveFeedbackTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/39"
+     OutpostEfficientAndIntuitiveFeedbackTask2("A way to see which feedback<br />has been addressed<br />"):::ImproveOutpostTasks
+     click OutpostEfficientAndIntuitiveFeedbackTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/38"
+     OutpostEfficientAndIntuitiveFeedbackTask3("Encourage service providers<br />not to use feedback to make<br />changes to their listing<br />"):::ImproveOutpostTasks
+     click OutpostEfficientAndIntuitiveFeedbackTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/37"
     end
 
     %% 4.1.3~ Approvals - tasks
@@ -349,38 +365,44 @@ flowchart
     %% 4.2~ Listings contain all necessary information - tasks
 
     subgraph NecessaryInformationInServiceListingsTasks[ ]
-     NecessaryInformationInServiceListingsTask0("Local offer mandatory<br />description unlinked from the<br />filters <br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/65"
-     NecessaryInformationInServiceListingsTask1("Childcare filters: does<br />school pick up, has childcare<br />vacancies, holiday<br />activities, SEN inclusive<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/64"
-     NecessaryInformationInServiceListingsTask2("Monday-Friday option for<br />services that run at the same<br />time each day<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/63"
-     NecessaryInformationInServiceListingsTask3("Free text field for fee<br />options<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/62"
-     NecessaryInformationInServiceListingsTask4("Service providers can select<br />whether their service needs a<br />referral or not<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask4 href "https://github.com/wearefuturegov/Outpost-Platform/issues/61"
-     NecessaryInformationInServiceListingsTask5("CQC information shown in a<br />listing<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask5 href "https://github.com/wearefuturegov/Outpost-Platform/issues/60"
-     NecessaryInformationInServiceListingsTask6("Services can be marked to<br />show they begin when someone<br />signs up (e.g. a 12-week<br />programme)<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask6 href "https://github.com/wearefuturegov/Outpost-Platform/issues/59"
-     NecessaryInformationInServiceListingsTask7("Admins can change what<br />options are shown under SEND<br />needs<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask7 href "https://github.com/wearefuturegov/Outpost-Platform/issues/58"
-     NecessaryInformationInServiceListingsTask8("Admins can change what<br />options are shown under<br />accessibility<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask8 href "https://github.com/wearefuturegov/Outpost-Platform/issues/57"
-     NecessaryInformationInServiceListingsTask9("Admins can change what<br />options are shown under<br />suitability<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask9 href "https://github.com/wearefuturegov/Outpost-Platform/issues/56"
-     NecessaryInformationInServiceListingsTask10("Services that run at multiple<br />locations can have different<br />schedules at each one<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask10 href "https://github.com/wearefuturegov/Outpost-Platform/issues/55"
-     NecessaryInformationInServiceListingsTask11("Services can be marked as<br />being delivered online or<br />remotely<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask11 href "https://github.com/wearefuturegov/Outpost-Platform/issues/54"
-     NecessaryInformationInServiceListingsTask12("Logos, images and videos can<br />be added to service listings<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask12 href "https://github.com/wearefuturegov/Outpost-Platform/issues/53"
-     NecessaryInformationInServiceListingsTask13("Documents can be uploaded in<br />service listings<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask13 href "https://github.com/wearefuturegov/Outpost-Platform/issues/52"
-     NecessaryInformationInServiceListingsTask14("Services can occur with<br />irregular schedules (e.g.<br />first Monday of the month)<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask14 href "https://github.com/wearefuturegov/Outpost-Platform/issues/51"
-     NecessaryInformationInServiceListingsTask15("Services can be shown as<br />happening on a specific date<br />"):::ImproveOutpostTasks
-     click NecessaryInformationInServiceListingsTask15 href "https://github.com/wearefuturegov/Outpost-Platform/issues/50"
+     NecessaryInformationInServiceListingsTask0("Add support for<br />holiday_schedule ORUK field<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask0 href "https://github.com/wearefuturegov/Outpost-Platform/issues/93"
+     NecessaryInformationInServiceListingsTask1("Update the guidance on the<br />suitable for section in<br />relation to SEND needs<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask1 href "https://github.com/wearefuturegov/Outpost-Platform/issues/92"
+     NecessaryInformationInServiceListingsTask2("Remove description as a<br />required field when<br />submitting a local offer<br />service.<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask2 href "https://github.com/wearefuturegov/Outpost-Platform/issues/91"
+     NecessaryInformationInServiceListingsTask3("Local offer mandatory<br />description unlinked from the<br />filters <br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask3 href "https://github.com/wearefuturegov/Outpost-Platform/issues/65"
+     NecessaryInformationInServiceListingsTask4("Childcare filters: does<br />school pick up, has childcare<br />vacancies, holiday<br />activities, SEN inclusive<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask4 href "https://github.com/wearefuturegov/Outpost-Platform/issues/64"
+     NecessaryInformationInServiceListingsTask5("Monday-Friday option for<br />services that run at the same<br />time each day<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask5 href "https://github.com/wearefuturegov/Outpost-Platform/issues/63"
+     NecessaryInformationInServiceListingsTask6("Free text field for fee<br />options<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask6 href "https://github.com/wearefuturegov/Outpost-Platform/issues/62"
+     NecessaryInformationInServiceListingsTask7("Service providers can select<br />whether their service needs a<br />referral or not<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask7 href "https://github.com/wearefuturegov/Outpost-Platform/issues/61"
+     NecessaryInformationInServiceListingsTask8("CQC information shown in a<br />listing<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask8 href "https://github.com/wearefuturegov/Outpost-Platform/issues/60"
+     NecessaryInformationInServiceListingsTask9("Services can be marked to<br />show they begin when someone<br />signs up (e.g. a 12-week<br />programme)<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask9 href "https://github.com/wearefuturegov/Outpost-Platform/issues/59"
+     NecessaryInformationInServiceListingsTask10("Admins can change what<br />options are shown under SEND<br />needs<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask10 href "https://github.com/wearefuturegov/Outpost-Platform/issues/58"
+     NecessaryInformationInServiceListingsTask11("Admins can change what<br />options are shown under<br />accessibility<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask11 href "https://github.com/wearefuturegov/Outpost-Platform/issues/57"
+     NecessaryInformationInServiceListingsTask12("Admins can change what<br />options are shown under<br />suitability<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask12 href "https://github.com/wearefuturegov/Outpost-Platform/issues/56"
+     NecessaryInformationInServiceListingsTask13("Services that run at multiple<br />locations can have different<br />schedules at each one<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask13 href "https://github.com/wearefuturegov/Outpost-Platform/issues/55"
+     NecessaryInformationInServiceListingsTask14("Services can be marked as<br />being delivered online or<br />remotely<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask14 href "https://github.com/wearefuturegov/Outpost-Platform/issues/54"
+     NecessaryInformationInServiceListingsTask15("Logos, images and videos can<br />be added to service listings<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask15 href "https://github.com/wearefuturegov/Outpost-Platform/issues/53"
+     NecessaryInformationInServiceListingsTask16("Documents can be uploaded in<br />service listings<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask16 href "https://github.com/wearefuturegov/Outpost-Platform/issues/52"
+     NecessaryInformationInServiceListingsTask17("Services can occur with<br />irregular schedules (e.g.<br />first Monday of the month)<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask17 href "https://github.com/wearefuturegov/Outpost-Platform/issues/51"
+     NecessaryInformationInServiceListingsTask18("Services can be shown as<br />happening on a specific date<br />"):::ImproveOutpostTasks
+     click NecessaryInformationInServiceListingsTask18 href "https://github.com/wearefuturegov/Outpost-Platform/issues/50"
     end
 
     %% 4.3~ Organisations contain more detail - tasks
@@ -493,7 +515,7 @@ mindmap
     :::EasierToAdopt
         RemoveRelianceOnTools[Remove reliance on specific<br />tools that other local<br />authorities might not have]
         :::EasierToAdoptLv2
-            RemoveRelianceOnToolsTask0("Create a Drupal module to<br />embed standalone Scout<br />")
+            RemoveRelianceOnToolsTask0("Create a Drupal Module for<br />Embedding Standalone Scout<br />")
             :::EasierToAdoptTasks
             RemoveRelianceOnToolsTask1("Scout is a standalone package<br />that can be displayed on any<br />website<br />")
             :::EasierToAdoptTasks
@@ -534,38 +556,52 @@ mindmap
 
     ImproveDataQuality[Improve data quality and ease<br />of sharing]
     :::ImproveDataQuality
-        ImproveDataQualityTask0("Enable easier sharing of data<br />between Outpost instances<br />")
+        ImproveDataQualityTask0("Add a checkbox for<br />nation/county wide service<br />")
         :::ImproveDataQualityTasks
-        ImproveDataQualityTask1("Support for ORUK vocabularies<br />")
+        ImproveDataQualityTask1("Add new API endpoint to<br />expose available options for<br />custom fields<br />")
         :::ImproveDataQualityTasks
-        ImproveDataQualityTask2("ORUK V3 Outpost compliance<br />")
+        ImproveDataQualityTask2("Enable easier sharing of data<br />between Outpost instances<br />")
         :::ImproveDataQualityTasks
-        ImproveDataQualityTask3("Easy import data from other<br />ORUK source<br />")
+        ImproveDataQualityTask3("Support for ORUK vocabularies<br />")
+        :::ImproveDataQualityTasks
+        ImproveDataQualityTask4("ORUK V3 Outpost compliance<br />")
+        :::ImproveDataQualityTasks
+        ImproveDataQualityTask5("Easy import data from other<br />ORUK source<br />")
         :::ImproveDataQualityTasks
 
     ImproveScout[Improvements to Scout]
     :::ImproveScout
         ImproveScoutMisc[Misc]
         :::ImproveScoutLv2
-            ImproveScoutMiscTask0("Public vs. professional views<br />for Scout<br />")
+            ImproveScoutMiscTask0("Add new filter for show only<br />sen inclusive records in<br />Scout<br />")
             :::ImproveScoutTasks
-            ImproveScoutMiscTask1("Authentication for Scout<br />")
+            ImproveScoutMiscTask1("Add new API endpoint to<br />expose available options for<br />custom fields<br />")
             :::ImproveScoutTasks
-            ImproveScoutMiscTask2("Services can be sorted (e.g.<br />by distance)<br />")
+            ImproveScoutMiscTask2("Add sort by option in scout<br />")
             :::ImproveScoutTasks
-            ImproveScoutMiscTask3("Filters to have AND logic<br />rather than OR<br />")
+            ImproveScoutMiscTask3("Implement cookie compliant<br />event tracking in Scout<br />")
             :::ImproveScoutTasks
-            ImproveScoutMiscTask4("Directory users can see<br />second level category<br />taxonomy when filtering<br />")
+            ImproveScoutMiscTask4("Public vs. professional views<br />for Scout<br />")
+            :::ImproveScoutTasks
+            ImproveScoutMiscTask5("Authentication for Scout<br />")
+            :::ImproveScoutTasks
+            ImproveScoutMiscTask6("Services can be sorted (e.g.<br />by distance)<br />")
+            :::ImproveScoutTasks
+            ImproveScoutMiscTask7("Filters to have AND logic<br />rather than OR<br />")
+            :::ImproveScoutTasks
+            ImproveScoutMiscTask8("Directory users can see<br />second level category<br />taxonomy when filtering<br />")
             :::ImproveScoutTasks
         ImproveScoutSearch[Search]
         :::ImproveScoutLv2
-            ImproveScoutSearchTask0("Autocomplete text search<br />")
+            ImproveScoutSearchTask0("Add fuzzy search into Outpost<br />API (keywords)<br />")
             :::ImproveScoutTasks
-            ImproveScoutSearchTask1("Search returns results by<br />relevancy<br />")
+            ImproveScoutSearchTask1("Autocomplete text search<br />")
             :::ImproveScoutTasks
-            ImproveScoutSearchTask2("Search can show related<br />services<br />")
+            ImproveScoutSearchTask2("Search returns results by<br />relevancy<br />")
             :::ImproveScoutTasks
-            ImproveScoutSearchTask3("Search can pick up spelling<br />errors<br />")
+            ImproveScoutSearchTask3("Search can show related<br />services<br />")
+            :::ImproveScoutTasks
+            ImproveScoutSearchTask4("Search can pick up spelling<br />errors<br />")
             :::ImproveScoutTasks
 
     ImproveOutpost[Make Outpost a better, easier<br />to use product]
@@ -578,7 +614,7 @@ mindmap
                 :::ImproveOutpostTasks
                 OutpostEfficientAndIntuitiveMiscTask1("Service owners can belong to<br />more than one organisation<br />")
                 :::ImproveOutpostTasks
-                OutpostEfficientAndIntuitiveMiscTask2("Passwordless log-in<br />")
+                OutpostEfficientAndIntuitiveMiscTask2("Passwordless log-in aka Magic<br />link login<br />")
                 :::ImproveOutpostTasks
                 OutpostEfficientAndIntuitiveMiscTask3("Service owners can invite<br />colleagues to join their<br />organisation in Outpost<br />")
                 :::ImproveOutpostTasks
@@ -596,11 +632,13 @@ mindmap
         :::ImproveOutpostLv2
             OutpostEfficientAndIntuitiveFeedback[Misc]
             :::ImproveOutpostLv3
-                OutpostEfficientAndIntuitiveFeedbackTask0("A way to acknowledge when<br />feedback has been actioned<br />")
+                OutpostEfficientAndIntuitiveFeedbackTask0("Mark feedback in Outpost as<br />doing/done <br />")
                 :::ImproveOutpostTasks
-                OutpostEfficientAndIntuitiveFeedbackTask1("A way to see which feedback<br />has been addressed<br />")
+                OutpostEfficientAndIntuitiveFeedbackTask1("A way to acknowledge when<br />feedback has been actioned<br />")
                 :::ImproveOutpostTasks
-                OutpostEfficientAndIntuitiveFeedbackTask2("Encourage service providers<br />not to use feedback to make<br />changes to their listing<br />")
+                OutpostEfficientAndIntuitiveFeedbackTask2("A way to see which feedback<br />has been addressed<br />")
+                :::ImproveOutpostTasks
+                OutpostEfficientAndIntuitiveFeedbackTask3("Encourage service providers<br />not to use feedback to make<br />changes to their listing<br />")
                 :::ImproveOutpostTasks
         OutpostEfficientAndIntuitive[Outpost is more efficient and<br />intuitive to use]
         :::ImproveOutpostLv2
@@ -632,37 +670,43 @@ mindmap
                 :::ImproveOutpostTasks
         NecessaryInformationInServiceListings[Service listings contain all<br />the necessary information for<br />someone to understand what it<br />is, who it's for, and how<br />it's run]
         :::ImproveOutpostLv2
-            NecessaryInformationInServiceListingsTask0("Local offer mandatory<br />description unlinked from the<br />filters <br />")
+            NecessaryInformationInServiceListingsTask0("Add support for<br />holiday_schedule ORUK field<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask1("Childcare filters: does<br />school pick up, has childcare<br />vacancies, holiday<br />activities, SEN inclusive<br />")
+            NecessaryInformationInServiceListingsTask1("Update the guidance on the<br />suitable for section in<br />relation to SEND needs<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask2("Monday-Friday option for<br />services that run at the same<br />time each day<br />")
+            NecessaryInformationInServiceListingsTask2("Remove description as a<br />required field when<br />submitting a local offer<br />service.<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask3("Free text field for fee<br />options<br />")
+            NecessaryInformationInServiceListingsTask3("Local offer mandatory<br />description unlinked from the<br />filters <br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask4("Service providers can select<br />whether their service needs a<br />referral or not<br />")
+            NecessaryInformationInServiceListingsTask4("Childcare filters: does<br />school pick up, has childcare<br />vacancies, holiday<br />activities, SEN inclusive<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask5("CQC information shown in a<br />listing<br />")
+            NecessaryInformationInServiceListingsTask5("Monday-Friday option for<br />services that run at the same<br />time each day<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask6("Services can be marked to<br />show they begin when someone<br />signs up (e.g. a 12-week<br />programme)<br />")
+            NecessaryInformationInServiceListingsTask6("Free text field for fee<br />options<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask7("Admins can change what<br />options are shown under SEND<br />needs<br />")
+            NecessaryInformationInServiceListingsTask7("Service providers can select<br />whether their service needs a<br />referral or not<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask8("Admins can change what<br />options are shown under<br />accessibility<br />")
+            NecessaryInformationInServiceListingsTask8("CQC information shown in a<br />listing<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask9("Admins can change what<br />options are shown under<br />suitability<br />")
+            NecessaryInformationInServiceListingsTask9("Services can be marked to<br />show they begin when someone<br />signs up (e.g. a 12-week<br />programme)<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask10("Services that run at multiple<br />locations can have different<br />schedules at each one<br />")
+            NecessaryInformationInServiceListingsTask10("Admins can change what<br />options are shown under SEND<br />needs<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask11("Services can be marked as<br />being delivered online or<br />remotely<br />")
+            NecessaryInformationInServiceListingsTask11("Admins can change what<br />options are shown under<br />accessibility<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask12("Logos, images and videos can<br />be added to service listings<br />")
+            NecessaryInformationInServiceListingsTask12("Admins can change what<br />options are shown under<br />suitability<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask13("Documents can be uploaded in<br />service listings<br />")
+            NecessaryInformationInServiceListingsTask13("Services that run at multiple<br />locations can have different<br />schedules at each one<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask14("Services can occur with<br />irregular schedules (e.g.<br />first Monday of the month)<br />")
+            NecessaryInformationInServiceListingsTask14("Services can be marked as<br />being delivered online or<br />remotely<br />")
             :::ImproveOutpostTasks
-            NecessaryInformationInServiceListingsTask15("Services can be shown as<br />happening on a specific date<br />")
+            NecessaryInformationInServiceListingsTask15("Logos, images and videos can<br />be added to service listings<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask16("Documents can be uploaded in<br />service listings<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask17("Services can occur with<br />irregular schedules (e.g.<br />first Monday of the month)<br />")
+            :::ImproveOutpostTasks
+            NecessaryInformationInServiceListingsTask18("Services can be shown as<br />happening on a specific date<br />")
             :::ImproveOutpostTasks
         OrganisationsMoreDetailed[Organisations contain more detail]
         :::ImproveOutpostLv2
